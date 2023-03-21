@@ -14,7 +14,7 @@
 ├── test
 │   └── test.py
 ├── util
-│   ├── --init--.py
+│   ├── __init__.py
 │   └── detection.py
 ├── README.md
 └── requirments.txt
@@ -25,3 +25,9 @@
 - results: test를 진행하여 생성되는 결과 영상이 저장되는 폴더 입니다. 
 - test: test.py를 통해 모델을 작동시켜볼 수 있씁니다. 
 - util: models 내 모델을 통해 영상 내 객체를 탐지하는 object detection을 진행하고 결과를 .mp4 형태로 생성하는 detect 모듈이 저장되어 있습니다.
+
+test/test.py를 통해 모델 사용이 가능합니다. 
+아래는 사용 예시 입니다. 
+```python
+print('hello')
+```
