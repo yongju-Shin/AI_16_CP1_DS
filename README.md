@@ -29,5 +29,19 @@
 test/test.py를 통해 모델 사용이 가능합니다. 
 아래는 사용 예시 입니다. 
 ```python
-print('hello')
+import sys
+import os
+
+sys.path.append(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
+
+from util.detection import Detection # Detection import 
+
+model_path = 'C:/Users/user/cp1_yolo/models/best.pt'  #모델 경로 입력
+input_path = 'C:/Users/user/cp1_yolo/data/sample1.mp4' # input으로 사용할 영상 경로 입력 
+output_path = 'C:/Users/user/cp1_yolo/results/sample1_result.mp4' #output 영상이 저장될 경로 입력 
+threshold = 0.2 # 검출 threshold 설정
+
+detector = Detection(model_path,threshold)
+
+detector.detect(input_path,output_path)
 ```
