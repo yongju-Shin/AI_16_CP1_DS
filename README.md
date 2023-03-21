@@ -1,7 +1,6 @@
 # AI_16_CP1_DS
 
-'''
-BaseModel
+'''BaseModel
 ├── data
 │   └── video
 ├── models
@@ -12,5 +11,4 @@ BaseModel
 │   └── detection.py
 ├── results
 └── test
-    └── test.ipynb
-'''
+    └── test.ipynb'''
